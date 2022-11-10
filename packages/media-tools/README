@@ -1,0 +1,7 @@
+Build the image:
+  docker build -t media-tools ./docker
+
+Run the image as interactive shell:
+  Linux/MacOS: docker run -w /media -v ${pwd}/media:/media -it --rm media-tools
+  windows: docker run -w /media %cd%/media:/media -it --rm media-tools
+
